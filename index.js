@@ -1,5 +1,6 @@
 const axios = require("axios");
 const core = require("@actions/core");
+const github = require("@actions/github");
 
 const slackUrl = core.getInput("slack-url");
 const message = core.getInput("message");
