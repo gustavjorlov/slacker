@@ -1,0 +1,12 @@
+name: "Send message to Slack"
+description: "Sends given message to given slack application"
+inputs:
+  message:
+    description: "Message to be delivered"
+    required: true
+  slack-url:
+    description: "Slack application url"
+    required: true
+runs:
+  using: "node12"
+  main: "index.js"
